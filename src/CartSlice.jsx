@@ -46,7 +46,6 @@ const CartSlice = createSlice({
   },
 });
 
-// ✅ Action exports
 export const { addItem, removeItem, updateQuantity } =
   CartSlice.actions;
 

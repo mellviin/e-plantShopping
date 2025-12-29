@@ -13,14 +13,14 @@ body, h1, ul {
   .navbar {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 30px;
+    height: 64px;
+    padding: 0 24px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 70px;
+    justify-content: space-between;
     box-sizing: border-box;
-    overflow: hidden; /* prevents height stretching */
   }
+  
   
   /* Logo */
   .tag img {
@@ -36,13 +36,41 @@ body, h1, ul {
     gap: 10px;
   }
   
+  .luxury img {
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+  }
+
   .luxury h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
+    line-height: 1;
   }
   
   .luxury i {
-    font-size: 12px;
+    font-size: 11px;
+    opacity: 0.9;
+  }
+  .cart {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cart_quantity_count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* ✅ perfect center */
+  
+    background: none;                  /* ❌ no background */
+    color: white;                      /* ✅ white text */
+    font-weight: bold;                 /* ✅ bold */
+    font-size: 16px;
+  
+    pointer-events: none;              /* click goes to cart icon */
   }
   
   /* Cart icon fix */
